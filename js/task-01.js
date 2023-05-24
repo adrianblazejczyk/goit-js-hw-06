@@ -4,7 +4,7 @@ function showListSummary(itemlist) {
   
   itemlist.forEach((item) => {
     console.log(`Category: ${item.firstElementChild.textContent}`)
-    console.log(`Elements: ${item.childNodes.length-1}`);
+    console.log(`Elements: ${item.querySelector("ul").querySelectorAll("li").length}`);
     console.log(` `);
   });
 
